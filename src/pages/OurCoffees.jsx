@@ -1,6 +1,6 @@
 import React from 'react';
 import ThreeDScene from '../models/Coffeebag.jsx';
-// import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+
 
 
 

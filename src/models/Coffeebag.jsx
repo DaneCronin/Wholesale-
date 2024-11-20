@@ -51,7 +51,7 @@ const ThreeDScene = () => {
 
     manager.onLoad = () => initScene(sceneData);
 
-    objLoader.load("./assets/Coffee OBJ.obj", (obj) => {
+    objLoader.load("./assets/3D/Coffee OBJ.obj", (obj) => {
       let geometry;
       obj.traverse((child) => {
         if (child.isMesh) {
