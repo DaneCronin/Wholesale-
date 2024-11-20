@@ -53,6 +53,31 @@
 }
 
 
+
+/* Cat and Cloud CSS */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/assets/Wholesale.png');
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #3F737F;
+}
+
+/* Hide scrollbars but keep functionality */
+::-webkit-scrollbar {
+  display: none;
+}
+
  nav {
   position: fixed;
   top: 0;

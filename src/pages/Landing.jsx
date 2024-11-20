@@ -1,5 +1,5 @@
 import React from 'react'
-import Background from '../assets/images/Wholesale-2.png';
+import Background from '../assets/images/CatandCloud Bags.png';
 
 const Landing = () => {
   return (
@@ -12,4 +12,4 @@ const Landing = () => {
   );
 }
 
-export default Landing
+export default Landing;
