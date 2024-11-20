@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, {useState} from 'react'
 import {Route, BrowserRouter as Router, Routes} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import { Landing, OurCoffees, CoffeeClass } from './pages';
@@ -9,7 +9,7 @@ function App() {
   
 
   return (
-    <main>
+    <main className="w-screen h-screen">
     <Router>
 
      <Navbar />
