@@ -1,5 +1,5 @@
 
-
+import Logo from '../assets/images/Logo.avif';
 import { NavLink } from "react-router-dom";
 
 
@@ -7,11 +7,14 @@ const Navbar = () => {
   return (
     <header className="header">
 
-        <NavLink to="/" className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md">
-       <p className="blue-gradient_text"><img src=""/></p>
+     
+
+       <nav className="flex gap-7 text-lg font-medium">
+
+       <NavLink to="/" className="w-5 h-5 rounded-lg bg-white items-center justify-center flex shadow-md">
+      <p> <img src={Logo} alt="Cat and Cloud Logo"/> </p>
        </NavLink>
 
-       <nav className="flex gap-7 text-lg font-medium ">
         <NavLink to="/ourcoffees" className= {({isActive}) => isActive ? 'text-blue-500' : 'text-black' }>
             Our Coffees
         </NavLink>

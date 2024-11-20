@@ -1,6 +1,6 @@
-import Home from "./Home";
+import Landing from "./Landing.jsx";
 import OurCoffees from "./OurCoffees.jsx";
 import CoffeeClass from "./CoffeeClass.jsx";
 
 
-export {Home, OurCoffees, CoffeeClass};
+export {Landing, OurCoffees, CoffeeClass};

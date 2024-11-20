@@ -2,9 +2,10 @@ import React from 'react'
 
 const OurCoffees = () => {
   return (
-    <div>
+    <section className="w-full h-screen relative">
+
       
-    </div>
+    </section>
   )
 }
 
