@@ -6,7 +6,9 @@ import { OrbitControls } from '@react-three/drei';
 
 // Separate the product info into a memoized component
 const ProductInfo = memo(() => (
-  <div className="w-full text-sm text-[#e6e6e6] leading-relaxed text-left">
+ 
+  <div className="w-full text-m text-[#e6e6e6] leading-relaxed text-left">
+  
     $11.25/lb || $7.78/10oz || $24.75/Kilo || $56.25/5lb<br/><br/>
     
     Our flagship blend does double duty for both brewed coffee and espresso applications. 
@@ -31,7 +33,7 @@ const ProductInfo = memo(() => (
 // Separate the 3D scene setup into its own component
 const Scene = memo(() => (
   <>
-    <ambientLight intensity={0.5} />
+    <ambientLight intensity={0.6} />
     <directionalLight position={[10, 10, 5]} intensity={1} />
     <CoffeeOBJ />
     <OrbitControls 
@@ -44,15 +46,17 @@ const Scene = memo(() => (
       maxPolarAngle={Math.PI / 2}
       minPolarAngle={Math.PI / 2}
     />
+
   </>
 ));
 
 const Product = () => {
   return (
-    <div className="w-full min-h-screen bg-[#447783] flex justify-center items-center p-5">
+    <section>
+    <div className="w-full min-h-screen  flex justify-center items-center p-5">
       <div className="flex flex-row w-full gap-8 max-w-7xl">
         {/* Content Section - Left Side */}
-        <div className="bg-[#0a192f] p-8 w-1/2 flex flex-col items-center relative z-10">
+        <div className="bg-[#383838] p-8 w-1/2 flex flex-col items-center relative z-10">
           <div className="flex justify-center w-full">
             <img 
               src={answerLogo} 
@@ -77,6 +81,7 @@ const Product = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
